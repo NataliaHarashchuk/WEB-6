@@ -1,0 +1,238 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrap > * {
+  box-sizing: border-box;
+}
+
+header {
+  height: 70px;
+  background-color: #ff8c00;
+  padding: 10px;
+  display: flex;
+  justify-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.block2 {
+  background-color: #f9eae1;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.block2 h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.block2 li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.block3 {
+  background-color: #fcbb71;
+  height: 50px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.block4 {
+  background-color: #cfbeda;
+  text-align: center;
+  padding: 1.2rem;
+  box-sizing: border-box;
+}
+
+.detective-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.detective-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.block6 {
+  background-color: #bb9d99;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+}
+.news-heading {
+  font-size: 1rem;
+  text-align: center;
+}
+.news-description {
+  font-size: 0.8rem;
+}
+
+.block5 {
+  background: #a491d3;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.founding-title {
+  margin-bottom: 10px;
+}
+.founding-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.founding-highlights {
+  padding-left: 20px;
+  font-size: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.container2 {
+  display: flex;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  height: 50px;
+  background-color: #7d4f50;
+  text-align: right;
+  color: #f9eae1;
+  padding: 0.4rem;
+}
+
+@media all and (min-width: 600px) {
+  .container_1 {
+    display: flex;
+    flex-grow: 1;
+  }
+  .block2 {
+    min-width: 25%;
+    height: auto;
+    flex-grow: 1;
+  }
+  .container,
+  .container2 {
+    flex-grow: 1;
+  }
+}
+
+.forms {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--accent-color);
+  padding: 0.5rem;
+  border-radius: var(--corner-radius);
+}
+
+#dropdown-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--corner-radius);
+}
+
+#dropdown-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--corner-radius);
+}
+
+#dropdowns {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--corner-radius);
+}
+
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 160px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
